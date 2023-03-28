@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Remove
+{% endblock %}
+
+{% block main %}
+    <form action="/remove" method="post">
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="symbol" placeholder="Allergy Item" type="text">
+        </div>
+        <button class="btn btn-primary" type="submit">Remove</button>
+    </form>
+{% endblock %}
