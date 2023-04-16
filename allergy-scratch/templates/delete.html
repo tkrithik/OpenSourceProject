@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Add
+{% endblock %}
+
+{% block main %}
+    <form action="/delete" method="post">
+        <div class="form-group">
+            <h1 class="center">Are you sure you want to delete your account?</h1>
+        </div>
+        <div class="panel-body">
+            <input type ="submit" class ="btn btn-primary" style="width: auto; margin: 20px;" name="action" value="Yes">
+            <input type ="submit" class ="btn btn-primary" style="width: auto; margin: 20px" name="action" value="No">
+        </div>
+    </form>
+{% endblock %}
